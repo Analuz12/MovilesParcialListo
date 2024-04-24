@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Idioma:"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="335dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery">
+
+        <RadioButton
+            android:id="@+id/rbingles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingles" />
+
+        <RadioButton
+            android:id="@+id/rbespañol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Español" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Tipo de Mapa"
+        android:gravity="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:layout_width="310dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMapa" >
+
+        <RadioButton
+            android:id="@+id/rbmapaSatelital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satelital" />
+
+        <RadioButton
+            android:id="@+id/rbnormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
